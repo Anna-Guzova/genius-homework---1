@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--beauty-landing-2-c1);
   font-weight: 400;
-  background-image: url(./imagers/background.png);
+  background-image: url(../imagers/background.png);
   background-repeat: no-repeat;
 }
 section {
@@ -256,7 +256,7 @@ ul {
       rgba(1, 28, 68, 0.73) 82.66%,
       #011c44 99.06%
     ),
-    url(./imagers/image-mask.png);
+    url(../imagers/image-mask.png);
 }
 
 .article-injections {
@@ -272,7 +272,7 @@ ul {
       rgba(1, 28, 68, 0.73) 82.66%,
       #011c44 99.06%
     ),
-    url(./imagers/image-injection.png);
+    url(../imagers/image-injection.png);
 }
 .article-clear {
   display: flex;
@@ -287,7 +287,7 @@ ul {
       rgba(1, 28, 68, 0.73) 82.66%,
       #011c44 99.06%
     ),
-    url(./imagers/image-clear.png);
+    url(../imagers/image-clear.png);
 }
 .find {
   color: var(--beauty-landing-2-s2);
@@ -300,7 +300,7 @@ ul {
 footer {
   background: var(--beauty-landing-2-c1);
   font-size: 16px;
-  background-image: url(./imagers/background-footer.png);
+  background-image: url(../imagers/background-footer.png);
   padding: 56px 80px;
   position: relative;
 }
