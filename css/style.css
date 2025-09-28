@@ -28,8 +28,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--beauty-landing-2-c1);
   font-weight: 400;
-  background-image: url(../imagers/background.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../imagers/background.png);
+  background-repeat: no-repeat; */
 }
 section {
   margin: 48px 0;
@@ -37,13 +37,21 @@ section {
 .container {
   width: 100%;
   max-width: 1288px;
-  margin: 0 autoS;
+  margin: 0 auto;
   padding: 0 24px;
 }
 .container-header {
   display: flex;
   align-items: center;
   gap: 56px;
+}
+.hero-section {
+  background-image: url('../imagers/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  /* background-size: cover; */
 }
 
 header {
@@ -81,8 +89,9 @@ header {
 .container-hero {
   display: flex;
   flex-direction: column;
-  margin-left: 206px;
-  margin-top: 122px;
+  margin-left: 150px;
+  width: 530px;
+  margin-right: 0;
 }
 h3 {
   font-weight: 400;
@@ -109,6 +118,7 @@ h2 {
   padding: 16px 32px;
   width: 219px;
   height: 53px;
+  font-family: 'Roboto';
 }
 .batton:hover {
   color: var(--beauty-landing-2-c1);
@@ -321,6 +331,12 @@ footer a {
 }
 .data {
   color: var(--beauty-landing-2-s5);
+}
+
+.find-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .footer-container {
   display: flex;
