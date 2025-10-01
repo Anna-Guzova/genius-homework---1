@@ -299,6 +299,29 @@ ul {
     ),
     url(../imagers/image-clear.png);
 }
+
+.carusel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--beauty-landing-2-c1);
+  cursor: pointer;
+}
+.carusel-arrow {
+  fill: var(--beauty-landing-2-c1);
+}
+.carusel-button:hover {
+  background-color: var(--beauty-landing-2-s2);
+}
+
+.carusel-button:hover .carusel-arrow {
+  fill: var(--beauty-landing-2-background);
+}
+
 .find {
   color: var(--beauty-landing-2-s2);
 }
