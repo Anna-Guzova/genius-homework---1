@@ -1,10 +1,4 @@
 :root {
-  --bakery-landing-1-background: #faf4ea;
-  --bakery-landing-1-s1: #31261a;
-  --bakery-landing-1-c2: #819b57;
-  --bakery-landing-1-s3: #465929;
-  --bakery-landing-1-s4: #a18268;
-  --bakery-landing-1-c5: #cfcfbc;
   --beauty-landing-2-background: #fff;
   --beauty-landing-2-s2: #2b7fff;
   --beauty-landing-2-c1: #011c44;
@@ -12,23 +6,12 @@
   --beauty-landing-2-s4: #ffd02b;
   --beauty-landing-2-s5: #747272;
   --beauty-landing-2-c6: #011f4a;
-  --dog-landing-3-background: #fff;
-  --dog-landing-3-s1: #ff9f0e;
-  --dog-landing-3-s2: #fcb62a;
-  --dog-landing-3-c3: #fffaf3;
-  --dog-landing-3-c4: #181817;
-  --dog-landing-3-c5: #f1f3ff;
-  --dog-landing-3-c6: #839aa9;
-  --dog-landing-3-s8: #f9f9ff;
-  --dog-landing-3-c9: #d9a6ff;
-  --dog-landing-3-c10: #ff6e9f;
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--beauty-landing-2-c1);
   font-weight: 400;
-  box-sizing: border-box;
 }
 
 * {
@@ -50,7 +33,7 @@ ul {
 }
 
 section {
-  margin: 48px 0;
+  margin: 96px 0;
 }
 .container {
   width: 100%;
@@ -71,8 +54,6 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
   width: 100%;
-  margin: 0;
-  z-index: 2;
 }
 
 .container-header {
@@ -82,12 +63,13 @@ header {
 }
 
 .hero-section {
-  height: 100vh; /* Висота на весь екран */
+  height: 100vh;
   background-image: url(../imagers/background.png);
-  background-size: cover; /* заповнює весь блок */
-  background-position: center; /* центрує */
-  background-repeat: no-repeat; /* не повторює */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 133px 0 0 0;
+  margin: 0;
 }
 
 .container-header a {
@@ -150,6 +132,7 @@ h2 {
   width: 219px;
   height: 53px;
   font-family: 'Roboto';
+  transition: color 0.2s;
 }
 .batton:hover {
   color: var(--beauty-landing-2-c1);
@@ -181,6 +164,7 @@ h1 {
 .aboutus-section {
   font-size: 22px;
 }
+
 .container-about {
   display: flex;
 }
@@ -196,6 +180,7 @@ h1 {
   gap: 40px;
   flex-grow: 1;
   flex-direction: column;
+  position: relative;
 }
 
 .image-first {
@@ -208,6 +193,101 @@ h1 {
   object-fit: cover;
   align-self: flex-end;
 }
+.star-l {
+  fill: var(--beauty-landing-2-c6);
+  position: absolute;
+  top: 336px;
+  right: 300px;
+  animation: spinl 2s infinite ease-in-out;
+}
+
+@keyframes spinl {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-c6);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-c6);
+  }
+  75% {
+    fill: var(--beauty-landing-2-s2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-c6);
+  }
+}
+
+.star-m {
+  fill: var(--beauty-landing-2-s2);
+  position: absolute;
+  top: 32px;
+  right: 0;
+  animation: spinm 2s infinite ease-in-out;
+}
+
+@keyframes spinm {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s2);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-s2);
+  }
+  75% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s2);
+  }
+}
+
+.star-s {
+  fill: var(--beauty-landing-2-s5);
+  position: absolute;
+  top: 270px;
+  right: 6px;
+  animation: spins 2s infinite ease-in-out;
+}
+
+@keyframes spins {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s5);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c3);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-s5);
+  }
+  75% {
+    fill: var(--beauty-landing-2-c3);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s5);
+  }
+}
 
 ul {
   list-style: none;
@@ -215,6 +295,7 @@ ul {
 .link-header {
   color: var(--beauty-landing-2-s2);
   text-align: center;
+  transition: color 0.2s;
 }
 .link-header:hover {
   color: var(--beauty-landing-2-c1);
@@ -224,6 +305,7 @@ ul {
   text-transform: capitalize;
   color: var(--beauty-landing-2-s2);
 }
+
 .whywe-container {
   text-align: center;
   margin-top: 176px;
@@ -284,6 +366,7 @@ ul {
   display: flex;
   gap: 32px;
   align-items: center;
+  margin-top: 48px;
 }
 
 .article-mask {
@@ -300,6 +383,7 @@ ul {
       #011c44 99.06%
     ),
     url(../imagers/image-mask.png);
+  transition: transform 0.3s;
 }
 
 .article-injections {
@@ -316,6 +400,7 @@ ul {
       #011c44 99.06%
     ),
     url(../imagers/image-injection.png);
+  transition: transform 0.3s;
 }
 .article-clear {
   display: flex;
@@ -331,6 +416,12 @@ ul {
       #011c44 99.06%
     ),
     url(../imagers/image-clear.png);
+  transition: transform 0.3s;
+}
+.article-mask:hover,
+.article-injections:hover,
+.article-clear:hover {
+  transform: scale(1.05);
 }
 
 .carusel-button {
@@ -343,6 +434,10 @@ ul {
   background-color: transparent;
   border: 1px solid var(--beauty-landing-2-c1);
   cursor: pointer;
+  transition: color 0.2s;
+}
+.carusel-button.next {
+  transform: rotate(180deg);
 }
 .carusel-arrow {
   fill: var(--beauty-landing-2-c1);
@@ -367,7 +462,7 @@ footer {
   background: var(--beauty-landing-2-c1);
   font-size: 16px;
   background-image: url(../imagers/background-footer.png);
-  padding: 56px 80px;
+  padding: 56px 0;
   position: relative;
 }
 footer a {
@@ -377,7 +472,9 @@ footer a {
 .address-items {
   display: flex;
   flex-direction: column;
-  text-align: center;
+
+  align-items: flex-start;
+  text-align: left;
   gap: 16px;
   padding: 0;
 }
@@ -391,6 +488,13 @@ footer a {
 
 address {
   font-style: normal;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 16px;
 }
 
 .find-container {
@@ -414,8 +518,9 @@ address {
 .footer-right {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  display: inline;
+  text-align: left;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .footer-icon a {
